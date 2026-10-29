@@ -1,0 +1,29 @@
+{
+  "clients": [
+    {
+      "clientId": "serviceclient",
+      "name": "Toolkit (user and group sync)",
+      "description": "Toolkit worker: reads users and groups via the admin API. Service account needs realm-management view-users and query-groups. Set Keycloak__AdminClientId / __AdminClientSecret.",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "publicClient": false,
+      "clientAuthenticatorType": "client-secret",
+      "standardFlowEnabled": false,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "serviceAccountsEnabled": true,
+      "fullScopeAllowed": true,
+      "redirectUris": [],
+      "webOrigins": [],
+      "attributes": {
+        "use.refresh.tokens": "false",
+        "client_credentials.use_refresh_token": "false"
+      },
+      "defaultClientScopes": [
+        "roles",
+        "basic"
+      ],
+      "optionalClientScopes": []
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "identityProviders": [
+    {
+      "alias": "entra",
+      "displayName": "Company login",
+      "providerId": "oidc",
+      "enabled": true,
+      "trustEmail": true,
+      "storeToken": false,
+      "addReadTokenRoleOnCreate": false,
+      "authenticateByDefault": false,
+      "linkOnly": false,
+      "hideOnLogin": false,
+      "config": {
+        "issuer": "https://login.microsoftonline.com/00000000-0000-0000-0000-000000000000/v2.0",
+        "authorizationUrl": "https://login.microsoftonline.com/00000000-0000-0000-0000-000000000000/oauth2/v2.0/authorize",
+        "tokenUrl": "https://login.microsoftonline.com/00000000-0000-0000-0000-000000000000/oauth2/v2.0/token",
+        "logoutUrl": "https://login.microsoftonline.com/00000000-0000-0000-0000-000000000000/oauth2/v2.0/logout",
+        "jwksUrl": "https://login.microsoftonline.com/00000000-0000-0000-0000-000000000000/discovery/v2.0/keys",
+        "userInfoUrl": "https://graph.microsoft.com/oidc/userinfo",
+        "clientId": "11111111-1111-1111-1111-111111111111",
+        "clientAuthMethod": "private_key_jwt",
+        "jwtX509HeadersEnabled": "true",
+        "defaultScope": "openid profile",
+        "validateSignature": "true",
+        "useJwksUrl": "true",
+        "pkceEnabled": "true",
+        "pkceMethod": "S256",
+        "syncMode": "FORCE",
+        "sendIdTokenOnLogout": "true",
+        "backchannelSupported": "false",
+        "disableUserInfo": "false",
+        "showInAccountConsole": "ALWAYS"
+      }
+    }
+  ]
+}
